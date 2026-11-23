@@ -1,0 +1,32 @@
+{
+ "module": "vegas_channel_engine",
+ "verdict": "no_stable_edge",
+ "params": {
+  "s1_ema": [20, 60],
+  "tunnel_ema": [144, 169],
+  "filter_ema": 12,
+  "old_regime_ema": [576, 676],
+  "macd": [12, 26, 9],
+  "fib_max": 0.62,
+  "fee_one_side": 0.0005,
+  "warmup_bars": 700
+ },
+ "grid": [
+  {"s1_ema": [10, 30]}, {"s1_ema": [20, 60]}, {"s1_ema": [30, 90]}, {"s1_ema": [50, 150]},
+  {"tunnel_ema": [100, 117]}, {"tunnel_ema": [144, 169]}, {"tunnel_ema": [200, 235]},
+  {"fib_max": 0.5}, {"fib_max": 0.62}, {"fib_max": 0.75}
+ ],
+ "key_numbers": {
+  "original_claim": "+87.4% (lookahead, void)",
+  "lookahead_same_day_final": 0.1903,
+  "live_short_ex_lobster": -0.0103,
+  "live_short_inc_lobster": 0.0380,
+  "param_best_in_sample": 0.7632,
+  "param_same_out_of_sample": -0.0413,
+  "param_out_of_sample_median": -0.0384,
+  "in_out_correlation": 0.507,
+  "long_s1_ex_lobster": 0.3827,
+  "long_old_regime_ex_lobster": -0.0180
+ },
+ "data": "binance 4h+1d, 2024-02-28 ~ 2026-11-23 (LOBSTER perp from 2026-03-11)"
+}
